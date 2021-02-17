@@ -10,7 +10,7 @@ namespace LstDoblementeEnlazada
 
         public Nodo<T> nodoRaiz { get; set; }
     
-
+        public int elementos { get; set; }
         public List<Nodo<T>> listaBusqueda = new List<Nodo<T>>();
 
         public ListaDobleEnl()
@@ -19,7 +19,7 @@ namespace LstDoblementeEnlazada
         }
 
         //Metodo para contar la cantidad de Nodos actuales en la lista
-        public int cantidadElementos()
+        public void cantidadElementos()
         {
             int cantidadNodos = 0;
             Nodo<T> nodoContador = nodoRaiz;
@@ -30,7 +30,7 @@ namespace LstDoblementeEnlazada
                 cantidadNodos++;
             }
 
-            return cantidadNodos;
+            elementos =  cantidadNodos;
         }
 
 
@@ -185,5 +185,59 @@ namespace LstDoblementeEnlazada
             }
         }
 
+
+        public void eliminarJugar(Nodo<T> raiz, Nodo<T> jugador) {
+            if (raiz != null && jugador != null)
+            {  
+                while (raiz != null)
+                {
+
+                    if (jugador == raiz)
+                    {
+                        Nodo<T> nodoSiguiente = jugador.nodoSiguiente;
+                        Nodo<T> nodoAnterior = jugador.nodoAnterior;
+
+
+                        //Solo existe este elemento en la lista
+                        if (nodoAnterior == null && nodoSiguiente == null)
+                        {
+                            nodoRaiz = null;
+                        }
+                        else {
+
+                            // Se encuentra entre nodos
+                            if (nodoSiguiente != null && nodoAnterior != null)
+                            {
+                                nodoAnterior.nodoSiguiente = nodoSiguiente;
+                                nodoSiguiente.nodoAnterior = nodoAnterior;
+                            }
+                            else {
+                                //Es el primer de la lista
+                                if (nodoAnterior == null)
+                                {
+                                    nodoRaiz = nodoSiguiente;
+                                    nodoRaiz.nodoAnterior = null;
+                                }
+                                // Es el ultimo de la lista
+                                if (nodoSiguiente == null)
+                                {
+                                    nodoAnterior.nodoSiguiente = null;
+
+                                }
+
+                            }
+                            
+                        }
+
+                        
+  
+
+                    }
+
+                    raiz = raiz.nodoSiguiente;
+                }
+
+            }
+        }
     }
 }

@@ -30,10 +30,12 @@ namespace tstLista
             nodo3.position = "F";
             nodo3.base_salary = "225000.0";
 
-
             lista.InsertarEnLista(lista.nodoRaiz, lista.nodoRaiz, nodo1);
             lista.InsertarEnLista(lista.nodoRaiz, lista.nodoRaiz, nodo2);
             lista.InsertarEnLista(lista.nodoRaiz, lista.nodoRaiz, nodo3);
+
+            //Pruebas para la busqueda
+            /*
 
             lista.BuscarEnLista(lista.nodoRaiz,"nombre,apellido", "Mariela,Torres");
 
@@ -43,6 +45,15 @@ namespace tstLista
             Console.WriteLine(lista.nodoRaiz);
 
             lista.BuscarEnLista(lista.nodoRaiz, "posicion", "F");
+            Console.WriteLine(lista.nodoRaiz);
+            Console.ReadLine();
+            
+             */
+
+            //Pruebas para eliminacion
+
+            lista.eliminarJugar(lista.nodoRaiz,nodo1);
+            lista.cantidadElementos();
             Console.WriteLine(lista.nodoRaiz);
             Console.ReadLine();
         }
