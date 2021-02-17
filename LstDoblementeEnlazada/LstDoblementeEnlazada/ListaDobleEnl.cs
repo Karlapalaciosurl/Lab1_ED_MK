@@ -9,7 +9,7 @@ namespace LstDoblementeEnlazada
         //Nodo Raiz de la lista doblemente enlazada
 
         public Nodo<T> nodoRaiz { get; set; }
-        public Nodo<T> nodoRaizBusqueda { get; set; }
+    
 
         public List<Nodo<T>> listaBusqueda = new List<Nodo<T>>();
 
@@ -76,14 +76,27 @@ namespace LstDoblementeEnlazada
                         busquedaNombre_Apellido(raiz,busqueda);
                     }
                     break;
+                case "posicion":
+                    {
+                        busquedaPosicion(raiz, busqueda);
+                    }
+                    break;
+                case "salario":
+                    {
+                        busquedaSalario(raiz, double.Parse(busqueda));
+                    }
+                    break;
+                case "club":
+                    {
+                        busquedaClub(raiz, busqueda);
+                    }
+                    break;
             }
         }
 
         public void busquedaNombre_Apellido(Nodo<T> raiz, string busqueda)
         {
- 
-           
-
+            List<Nodo<T>> listaB = new List<Nodo<T>>();
             if (raiz != null)
             {
                 while (raiz != null)
@@ -94,62 +107,81 @@ namespace LstDoblementeEnlazada
                     string nombre_apellido = delegadoGen(raiz.first_name + "|" + raiz.last_name);
                     if (nombre_apellido == busqueda)
                     {
-                        listaBusqueda.Add(raiz);
+                        listaB.Add(raiz);
                     }
 
                     raiz = raiz.nodoSiguiente;
                 }
+
+                listaBusqueda = listaB;
             }
         }
 
-        public void busquedaPosicion(string busqueda)
+        public void busquedaPosicion(Nodo<T> raiz, string busqueda)
         {
-            Nodo<T> nodoContador = new Nodo<T>();
-
-            while (nodoContador != null)
+            if (raiz != null)
             {
-                nodoContador = nodoContador.nodoSiguiente;
-
-                DelegadoGenerico<string> delegadoGen = new DelegadoGenerico<string>(nodoContador.nombre_Apellido);
-                string nombre_apellido = delegadoGen(nodoContador.first_name + "|" + nodoContador.last_name);
-                if (nombre_apellido == busqueda)
+                List<Nodo<T>> listaB = new List<Nodo<T>>();
+                while (raiz != null)
                 {
-                    listaBusqueda.Add(nodoContador);
+
+
+                    DelegadoGenerico<string> delegadoGen = new DelegadoGenerico<string>(raiz.toString);
+                    string posicion = delegadoGen(raiz.position.ToString());
+                    if (posicion == busqueda)
+                    {
+                        listaB.Add(raiz);
+                    }
+
+                    raiz = raiz.nodoSiguiente;
                 }
+
+                listaBusqueda = listaB;
             }
         }
 
-        public void busquedaSalario(int busqueda)
+        public void busquedaSalario(Nodo<T> raiz, double busqueda)
         {
-            Nodo<T> nodoContador = nodoRaiz;
 
-            while (nodoContador != null)
+            if (raiz != null)
             {
-                nodoContador = nodoContador.nodoSiguiente;
-
-                DelegadoGenerico<string> delegadoGen = new DelegadoGenerico<string>(nodoContador.nombre_Apellido);
-                string nombre_apellido = delegadoGen(nodoContador.first_name + "|" + nodoContador.last_name);
-                //if (nombre_apellido == busqueda)
-                //{
-                //    listaBusqueda.Add(nodoContador);
-                //}
-            }
-        }
-
-        public void busquedaClub(string busqueda)
-        {
-            Nodo<T> nodoContador = nodoRaiz;
-
-            while (nodoContador != null)
-            {
-                nodoContador = nodoContador.nodoSiguiente;
-
-                DelegadoGenerico<string> delegadoGen = new DelegadoGenerico<string>(nodoContador.nombre_Apellido);
-                string nombre_apellido = delegadoGen(nodoContador.first_name + "|" + nodoContador.last_name);
-                if (nombre_apellido == busqueda)
+                List<Nodo<T>> listaB = new List<Nodo<T>>();
+                while (raiz != null)
                 {
-                    listaBusqueda.Add(nodoContador);
+
+                    DelegadoGenericoInt<string> delegadoGen = new DelegadoGenericoInt<string>(raiz.StringToInt);
+                    double salario = delegadoGen((raiz.base_salary).ToString());
+                    if (salario == busqueda)
+                    {
+                        listaB.Add(raiz);
+                    }
+
+                    raiz = raiz.nodoSiguiente;
                 }
+
+                listaBusqueda = listaB;
+            }
+        }
+
+        public void busquedaClub(Nodo<T> raiz, string busqueda)
+        {
+            if (raiz != null)
+            {
+                List<Nodo<T>> listaB = new List<Nodo<T>>();
+                while (raiz != null)
+                {
+
+                    DelegadoGenerico<string> delegadoGen = new DelegadoGenerico<string>(raiz.toString);
+                    string posicion = delegadoGen(raiz.club.ToString());
+                    if (posicion == busqueda)
+                    {
+                        listaB.Add(raiz);
+                    }
+
+                    raiz = raiz.nodoSiguiente;
+                }
+
+                listaBusqueda = listaB;
             }
         }
 

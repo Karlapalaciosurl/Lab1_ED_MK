@@ -7,8 +7,8 @@ namespace LstDoblementeEnlazada
     public interface IBusquedas<T>
     {
         public void busquedaNombre_Apellido(Nodo<T> raiz, string busqueda);
-        public void busquedaPosicion(string busqueda);
-        public void busquedaSalario(int busqueda);
-        public void busquedaClub(string busqueda);
+        public void busquedaPosicion(Nodo<T> raiz, string busqueda);
+        public void busquedaSalario(Nodo<T> raiz, double busqueda);
+        public void busquedaClub(Nodo<T> raiz, string busqueda);
     }
 }
