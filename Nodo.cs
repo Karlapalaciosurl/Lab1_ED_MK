@@ -16,6 +16,7 @@ namespace ListaDoblementeEnlazada
 
         public Nodo<T> nodoSiguiente { get; set; }
 
+        // Constructor
         Nodo() {
             nodoAnterior = null;
             nodoSiguiente = null;
