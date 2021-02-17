@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "tstLista/1.0.0": {
+        "dependencies": {
+          "LstDoblementeEnlazada": "1.0.0"
+        },
+        "runtime": {
+          "tstLista.dll": {}
+        }
+      },
+      "LstDoblementeEnlazada/1.0.0": {
+        "runtime": {
+          "LstDoblementeEnlazada.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "tstLista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LstDoblementeEnlazada/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

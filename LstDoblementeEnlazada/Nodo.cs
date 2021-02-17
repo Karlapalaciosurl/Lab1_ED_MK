@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ListaDoblementeEnlazada
+namespace LstDoblementeEnlazada
 {
     public delegate string DelegadoGenerico<T>(T t);
+    
     public class Nodo<T>
     {
         public T club { get; set; }
@@ -17,15 +19,14 @@ namespace ListaDoblementeEnlazada
         public Nodo<T> nodoSiguiente { get; set; }
 
         // Constructor
-        Nodo() {
+        public Nodo()
+        {
             nodoAnterior = null;
             nodoSiguiente = null;
-        
+
         }
 
-       
-
-        public string nombre_Apellido(string fullName)
+        public  string nombre_Apellido(string fullName)
         {
             return fullName.Replace('|', ',');
         }
@@ -35,6 +36,8 @@ namespace ListaDoblementeEnlazada
             return guaranteed_compensation;
         }
 
+
     }
 
+    
 }
