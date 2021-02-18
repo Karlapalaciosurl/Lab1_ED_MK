@@ -33,7 +33,7 @@ namespace MSL_APP.Controllers
                 case "lista C#":
                     {
                         Storage.Instance.tipoLista = tipoLista;
-                        return View("Index", "CargaDatos");
+                        return RedirectToAction("Index", "CargaDatos");
                     }
                     break;
                 default:

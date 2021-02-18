@@ -26,6 +26,8 @@ namespace MSL_APP.Utils
         public string tipoCarga = "";
 
         public ListaDobleEnl<string> listaArtesanal = new ListaDobleEnl<string>();
+        public List<Nodo<string>> listaCSharp = new List<Nodo<string>>();
+
 
     }
 }
