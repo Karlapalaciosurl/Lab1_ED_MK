@@ -1,0 +1,51 @@
+﻿@using MSL_APP.Utils;
+@{
+    ViewData["Title"] = "File loader";
+}
+
+<h1 class="header center orange-text">@Storage.Instance.tipoCarga</h1>
+<div class="row center">
+    <h5 class="header col s12 light">Ingrese el archivo csv conteniendo los jugadores de la MLS</h5>
+</div>
+
+<div class="input-field col s12">
+    <form action="@Url.Action("DatosManuales", "CargaDatos")" class="col s12" method="post">
+        <div class="row">
+            <div class="row">
+                <div class="input-field col s2">
+                    <input id="club_" type="text" name="club">
+                    <label for="club_">Club</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="last_name" type="text" name="last_name">
+                    <label for="last_name">Apellido</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="first_name" type="text" name="first_name">
+                    <label for="first_name">Nombre</label>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col s2">
+                    <input id="position_" type="text" name="position">
+                    <label for="position_">Posicion</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="salary_" type="text" name="salary">
+                    <label for="salary_">Salario</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="compensation_" type="text" name="compensation">
+                    <label for="compensation_">Compensacion</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light center" type="submit" name="action">
+            Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</div>
+
+

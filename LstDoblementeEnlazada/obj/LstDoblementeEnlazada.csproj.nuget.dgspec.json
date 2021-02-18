@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj": {}
+    "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj": {
+    "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj",
+        "projectUniqueName": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj",
         "projectName": "LstDoblementeEnlazada",
-        "projectPath": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj",
+        "projectPath": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada.csproj",
         "packagesPath": "C:\\Users\\Juan-Gtsk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\LstDoblementeEnlazada\\obj\\",
+        "outputPath": "C:\\Users\\Juan-Gtsk\\Desktop\\Lab1_ED_MK\\LstDoblementeEnlazada\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan-Gtsk\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,3 +7,12 @@ C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\LstDoblementeEnlazad
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.csproj.CoreCompileInputs.cache
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.dll
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.pdb
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\bin\Debug\netcoreapp3.1\LstDoblementeEnlazada.deps.json
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\bin\Debug\netcoreapp3.1\LstDoblementeEnlazada.dll
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\bin\Debug\netcoreapp3.1\LstDoblementeEnlazada.pdb
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.csprojAssemblyReference.cache
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.AssemblyInfoInputs.cache
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.AssemblyInfo.cs
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.csproj.CoreCompileInputs.cache
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.dll
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\LstDoblementeEnlazada\obj\Debug\netcoreapp3.1\LstDoblementeEnlazada.pdb

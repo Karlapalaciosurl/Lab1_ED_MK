@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="header center orange-text">Estructura de datos</h1>
+<div class="row center">
+    <h5 class="header col s12 light">Seleccionar la estructura de datos a utilizar.</h5>
+    
+</div>
+
+<div class="input-field col s12">
+    <form action="@Url.Action("Index", "Home")" method="post">
+        <select required name="TipoLista">
+            <option value="" disabled selected>Seleccionar la lista</option>
+            <option value="lista artesanal">Lista Artesanal</option>
+            <option value="lista C#">Lista C#</option>
+        </select>
+
+        <button class="btn waves-effect waves-light center" type="submit" name="action">
+            Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</div>
+
+

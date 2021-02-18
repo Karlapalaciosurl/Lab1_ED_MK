@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LstDoblementeEnlazada", "LstDoblementeEnlazada\LstDoblementeEnlazada.csproj", "{C75EA2E0-8C8F-4DF5-BB47-1B0F47296C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LstDoblementeEnlazada", "LstDoblementeEnlazada\LstDoblementeEnlazada.csproj", "{C75EA2E0-8C8F-4DF5-BB47-1B0F47296C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tstLista", "tstLista\tstLista.csproj", "{4BB765CB-5293-40FA-A8BA-ED9EA731C00F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSL_APP", "MSL_APP\MSL_APP.csproj", "{8A0AFD0E-6824-459F-8B6A-B24131F3C792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C75EA2E0-8C8F-4DF5-BB47-1B0F47296C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75EA2E0-8C8F-4DF5-BB47-1B0F47296C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75EA2E0-8C8F-4DF5-BB47-1B0F47296C9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BB765CB-5293-40FA-A8BA-ED9EA731C00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB765CB-5293-40FA-A8BA-ED9EA731C00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB765CB-5293-40FA-A8BA-ED9EA731C00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB765CB-5293-40FA-A8BA-ED9EA731C00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0AFD0E-6824-459F-8B6A-B24131F3C792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0AFD0E-6824-459F-8B6A-B24131F3C792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0AFD0E-6824-459F-8B6A-B24131F3C792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0AFD0E-6824-459F-8B6A-B24131F3C792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

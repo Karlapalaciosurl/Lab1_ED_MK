@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace LstDoblementeEnlazada
 {
     public delegate string DelegadoGenerico<T>(T t);
-    
+    public delegate double DelegadoGenericoInt<T>(T t);
     public class Nodo<T>
     {
         public T club { get; set; }
@@ -31,12 +31,15 @@ namespace LstDoblementeEnlazada
             return fullName.Replace('|', ',');
         }
 
-        public  int StringToInt(int guaranteed_compensation)
+        public  double StringToInt(string guaranteed_compensation)
         {
-            return guaranteed_compensation;
+            return Convert.ToDouble(guaranteed_compensation);
         }
 
-
+        public string toString(string stringVariable)
+        {
+            return stringVariable;
+        }
     }
 
     
