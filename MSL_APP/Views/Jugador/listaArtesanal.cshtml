@@ -6,9 +6,9 @@
     ViewData["Title"] = "Player";
 }
 
-<h1 class="header center orange-text">Estructura de datos</h1>
+<h1 class="header center orange-text">Jugadores</h1>
 <div class="row center">
-    <h5 class="header col s12 light">Jugadores</h5>
+    <h5 class="header col s12 light">Contenido de Lista Artesanal</h5>
 
 </div>
 
@@ -19,13 +19,14 @@
         nodoActual = Model.nodoRaiz;
         while (nodoActual != null)
         {
-            <ul class="collection with-header">
-                <li class="collection-header"><h4>@nodoActual.first_name,@nodoActual.last_name</h4></li>
-                <li class="collection-item">Club: @nodoActual.club</li>
-                <li class="collection-item">Posicion: @nodoActual.position</li>
-                <li class="collection-item">Salario: @nodoActual.base_salary</li>
-                <li class="collection-item">Compensacion: @nodoActual.guaranteed_compensation</li>
-            </ul>
+    <ul class="collection with-header col s3">
+        <li class="collection-header"><h4>@nodoActual.first_name,@nodoActual.last_name</h4></li>
+        <li class="collection-item">Club: @nodoActual.club</li>
+        <li class="collection-item">Posicion: @nodoActual.position</li>
+        <li class="collection-item">Salario: @nodoActual.base_salary</li>
+        <li class="collection-item">Compensacion: @nodoActual.guaranteed_compensation</li>
+        @*<li class="collection-item center-align"><a href="/Jugador/eliminarJugadorArtesanal/@nodoActual.first_name"><i class="small material-icons red-text">delete</i></a> <a href="/Jugador/listaArtesanal"><i class="small material-icons blue-text">edit</i></a></li>*@
+    </ul>
 
             nodoActual = nodoActual.nodoSiguiente;
         }

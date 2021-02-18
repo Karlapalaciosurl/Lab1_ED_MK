@@ -38,3 +38,6 @@ C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\bin\Debug\netcoreapp3.1\LstDoblementeEnlazada.dll
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\bin\Debug\netcoreapp3.1\LstDoblementeEnlazada.pdb
 C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\obj\Debug\netcoreapp3.1\Razor\Views\Jugador\listaArtesanal.cshtml.g.cs
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\obj\Debug\netcoreapp3.1\Razor\Views\Jugador\Buscar.cshtml.g.cs
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\obj\Debug\netcoreapp3.1\Razor\Views\Jugador\RespuestaBusqueda.cshtml.g.cs
+C:\Users\Juan-Gtsk\Desktop\Lab1_ED_MK\MSL_APP\obj\Debug\netcoreapp3.1\Razor\Views\Jugador\editarJugador.cshtml.g.cs

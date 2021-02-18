@@ -1,0 +1,56 @@
+﻿@using MSL_APP.Utils;
+@using LstDoblementeEnlazada;
+@model Nodo<string>;
+
+@{
+    ViewData["Title"] = "Response Search";
+}
+
+<h1 class="header center orange-text">Jugador @Model.first_name, @Model.last_name</h1>
+<div class="row center">
+    <h5 class="header col s12 light">Contenido del jugador para editar</h5>
+
+</div>
+
+<div class="row">
+    <form action="@Url.Action("cambiarJugador", "Jugador")" method="post" class="col s12">
+        <div class="row">
+            <div class="row">
+                <div class="input-field col s2">
+                    <input id="club_" type="text" name="club"  value=@Model.club>
+                    <label for="club_">Club</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="last_name" type="text" name="last_name"  value=@Model.last_name>
+                    <label for="last_name">Apellido</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="first_name" type="text" name="first_name"  value=@Model.first_name>
+                    <label for="first_name">Nombre</label>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col s2">
+                    <input id="position_" type="text" name="position"  value=@Model.position>
+                    <label for="position_">Posicion</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="salary_" type="text" name="salary" value=@Model.base_salary>
+                    <label for="salary_">Salario</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="compensation_" type="text" name="compensation"  value=@Model.guaranteed_compensation>
+                    <label for="compensation_">Compensacion</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light center" type="submit" name="action">
+            Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+ 
+</div>
+
+

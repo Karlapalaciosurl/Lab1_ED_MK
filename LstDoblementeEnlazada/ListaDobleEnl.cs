@@ -69,6 +69,7 @@ namespace LstDoblementeEnlazada
 
         public void BuscarEnLista(Nodo<T> raiz, string tipoBusqueda, string busqueda)
         {
+            listaBusqueda.Clear();
             switch (tipoBusqueda)
             {
                 case "nombre,apellido":

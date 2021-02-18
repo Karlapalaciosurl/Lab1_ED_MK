@@ -1,0 +1,44 @@
+﻿@using MSL_APP.Utils;
+@using LstDoblementeEnlazada;
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1 class="header center orange-text">Buscar Jugador</h1>
+<div class="row center">
+    <h5 class="header col s12 light">Ingrese la busqueda</h5>
+
+</div>
+
+<div class="row">
+    <form action="@Url.Action("buscarJugadorArtesanal", "Jugador")" class="col s12" method="post">
+
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="busqueda1" type="text" class="validate" name="Busqueda">
+                <label for="busqueda1">Busqueda</label>
+            </div>
+            <div class="input-field col s6">
+                <select required name="tipoBusqueda">
+                    <option value="" disabled selected>Seleccionar la busqueda</option>
+                    <option value="nombre,apellido">Nombre,Apellido</option>
+                    <option value="posicion">Posicion</option>
+                    <option value="salario">Salario</option>
+                    <option value="club">Club</option>
+                </select>
+            </div>
+
+        </div>
+        <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+            Submit
+            <i class="material-icons right">send</i>
+        </button>
+
+
+
+
+    </form>
+</div>
+
+

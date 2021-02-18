@@ -1,0 +1,29 @@
+﻿@using MSL_APP.Utils;
+@using LstDoblementeEnlazada;
+@model List<Nodo<string>>;
+
+@{
+    ViewData["Title"] = "Response Search";
+}
+
+<h1 class="header center orange-text">Resultado Busqueda</h1>
+<div class="row center">
+    <h5 class="header col s12 light">Contenido del resultado de la busqueda</h5>
+
+</div>
+
+<div class="row">
+    @foreach (Nodo<string> item in Model)
+    {
+        <ul class="collection with-header col s3">
+            <li class="collection-header"><h4>@item.first_name,@item.last_name</h4></li>
+            <li class="collection-item">Club: @item.club</li>
+            <li class="collection-item">Posicion: @item.position</li>
+            <li class="collection-item">Salario: @item.base_salary</li>
+            <li class="collection-item">Compensacion: @item.guaranteed_compensation</li>
+            *<li class="collection-item center-align"><a href="/Jugador/eliminarJugadorArtesanal?jugador=@item.first_name,@item.last_name"><i class="small material-icons red-text">delete</i></a> <a href="/Jugador/editarJugadorArtesanal?jugador=@item.first_name,@item.last_name"><i class="small material-icons blue-text">edit</i></a></li>
+        </ul>
+    }
+</div>
+
+
