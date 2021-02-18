@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LstDoblementeEnlazada;
+using MSL_APP.Models;
 
 
 namespace MSL_APP.Utils
@@ -28,6 +29,7 @@ namespace MSL_APP.Utils
         public ListaDobleEnl<string> listaArtesanal = new ListaDobleEnl<string>();
         public List<Nodo<string>> listaCSharp = new List<Nodo<string>>();
 
+        public List<Logs> logs = new List<Logs>();
 
     }
 }
